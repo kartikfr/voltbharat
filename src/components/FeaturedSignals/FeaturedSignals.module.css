@@ -1,0 +1,240 @@
+.sectionContainer {
+  position: relative;
+  padding: 100px 40px;
+  background-color: var(--softIvory);
+  border-bottom: 1px solid rgba(75, 91, 120, 0.08);
+}
+
+.sectionContent {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  max-width: 860px;
+  margin: 0 auto 64px auto;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--fontData);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--renewableGreen);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.headline {
+  font-family: var(--fontHeading);
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--intelligenceBlue);
+  letter-spacing: -1px;
+  margin-bottom: 24px;
+}
+
+.subtitle {
+  font-family: var(--fontBody);
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--steelBlue);
+}
+
+/* 2-Column Card Grid */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.signalCard {
+  background: var(--white);
+  border: 1px solid rgba(13, 27, 61, 0.08);
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 400px;
+  transition: var(--transitionSmooth);
+  box-shadow: 0 10px 30px rgba(13, 27, 61, 0.02);
+  position: relative;
+  overflow: hidden;
+}
+
+.signalCard:hover {
+  transform: translateY(-8px);
+  border-color: rgba(31, 164, 99, 0.3);
+  box-shadow: 0 20px 40px rgba(13, 27, 61, 0.06);
+}
+
+.isHotCard {
+  border-color: rgba(255, 193, 7, 0.2);
+}
+
+.isHotCard:hover {
+  border-color: var(--signalYellow);
+  box-shadow: 0 20px 40px rgba(255, 193, 7, 0.05);
+}
+
+/* Header Info Rows */
+.cardHeaderRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+  font-family: var(--fontData);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.badgeRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--renewableGreen);
+  font-weight: 700;
+}
+
+.badgeIcon {
+  color: var(--renewableGreen);
+}
+
+.categoryBadge {
+  letter-spacing: 1px;
+}
+
+.dateRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--steelBlue);
+  opacity: 0.7;
+}
+
+.dateIcon {
+  color: var(--steelBlue);
+}
+
+/* Body typography */
+.cardBody {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.cardTitle {
+  font-family: var(--fontHeading);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--intelligenceBlue);
+  line-height: 1.25;
+}
+
+.cardSummary {
+  font-family: var(--fontBody);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--steelBlue);
+}
+
+/* Decoded actionable highlights */
+.decodedBanner {
+  background-color: var(--lightGrey);
+  border-left: 3px solid var(--renewableGreen);
+  padding: 16px 20px;
+  border-radius: 8px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-bottom: 28px;
+}
+
+.isHotCard .decodedBanner {
+  border-left-color: var(--signalYellow);
+  background-color: rgba(255, 193, 7, 0.05);
+}
+
+.decodedText {
+  font-family: var(--fontBody);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--intelligenceBlue);
+  line-height: 1.5;
+}
+
+/* Footer elements */
+.cardFooter {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(75, 91, 120, 0.08);
+  padding-top: 20px;
+}
+
+.readMoreLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--intelligenceBlue);
+  font-family: var(--fontHeading);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transitionSmooth);
+}
+
+.readMoreLink:hover {
+  color: var(--renewableGreen);
+}
+
+.arrowIcon {
+  transition: var(--transitionSmooth);
+}
+
+.readMoreLink:hover .arrowIcon {
+  transform: translateX(4px);
+}
+
+/* Hot signal marker */
+.hotIndicator {
+  position: absolute;
+  top: 16px;
+  right: -36px;
+  transform: rotate(45deg);
+  background-color: var(--signalYellow);
+  color: var(--intelligenceBlue);
+  font-family: var(--fontData);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 4px 30px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(255, 193, 7, 0.2);
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .cardGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionContainer {
+    padding: 60px 24px;
+  }
+  .headline {
+    font-size: 32px;
+  }
+  .signalCard {
+    padding: 30px 20px;
+  }
+  .cardTitle {
+    font-size: 20px;
+  }
+}

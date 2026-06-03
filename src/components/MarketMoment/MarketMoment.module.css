@@ -1,0 +1,531 @@
+.sectionContainer {
+  position: relative;
+  padding: 100px 40px;
+  background-color: var(--white);
+  border-bottom: 1px solid rgba(75, 91, 120, 0.08);
+}
+
+.sectionContent {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  max-width: 860px;
+  margin: 0 auto 64px auto;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--fontData);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--renewableGreen);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.headline {
+  font-family: var(--fontHeading);
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--intelligenceBlue);
+  letter-spacing: -1px;
+  margin-bottom: 24px;
+}
+
+.subtitle {
+  font-family: var(--fontBody);
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--steelBlue);
+}
+
+/* Dashboard Console Container */
+.consoleContainer {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  background-color: var(--white);
+  border: 1px solid rgba(13, 27, 61, 0.08);
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(13, 27, 61, 0.04);
+  overflow: hidden;
+  min-height: 520px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  background-color: var(--intelligenceBlue);
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sidebarTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--signalYellow);
+  font-family: var(--fontData);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  padding-left: 12px;
+}
+
+.tabBtn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  transition: var(--transitionSmooth);
+  width: 100%;
+}
+
+.tabBtn:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.activeTabBtn {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.tabBtnIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transitionSmooth);
+}
+
+.activeTabBtn .tabBtnIcon {
+  background: var(--renewableGreen);
+  color: var(--white);
+  box-shadow: 0 4px 10px rgba(31, 164, 99, 0.3);
+}
+
+.tabBtnTexts {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tabLabel {
+  font-family: var(--fontHeading);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.tabDesc {
+  font-family: var(--fontBody);
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.sidebarFooter {
+  margin-top: auto;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--fontBody);
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.35);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Visual Board Main Content Panel */
+.visualBoard {
+  padding: 48px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+}
+
+.panelContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.panelTitleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.panelTitle {
+  font-family: var(--fontHeading);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--intelligenceBlue);
+}
+
+.panelTag {
+  font-family: var(--fontData);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 30px;
+  background-color: rgba(31, 164, 99, 0.08);
+  color: var(--renewableGreen);
+  border: 1px solid rgba(31, 164, 99, 0.15);
+}
+
+/* SVG Chart styles */
+.chartContainer {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.svgChart {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.chartArea {
+  transition: d 0.5s ease-in-out;
+}
+
+.chartLine {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  animation: drawLine 2.5s ease-out;
+}
+
+@keyframes drawLine {
+  from { stroke-dashoffset: 1000; }
+  to { stroke-dashoffset: 0; }
+}
+
+.pointDot {
+  fill: var(--white);
+  stroke: var(--renewableGreen);
+  stroke-width: 2px;
+  transition: transform 0.2s ease;
+}
+
+.pointDot:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.targetDot {
+  fill: var(--renewableGreen);
+  stroke: var(--white);
+  stroke-width: 2px;
+  animation: targetPulse 2s infinite;
+}
+
+@keyframes targetPulse {
+  0% { box-shadow: 0 0 0 0 rgba(31,164,99,0.5); r: 6; }
+  50% { r: 9; }
+  100% { r: 6; }
+}
+
+.chartAxisLabel {
+  font-family: var(--fontData);
+  font-size: 11px;
+  fill: var(--steelBlue);
+  text-anchor: middle;
+}
+
+.chartValLabel {
+  font-family: var(--fontData);
+  font-size: 10px;
+  fill: var(--steelBlue);
+  text-anchor: middle;
+  opacity: 0.8;
+}
+
+.chartValLabelBold {
+  font-family: var(--fontData);
+  font-size: 12px;
+  font-weight: 700;
+  fill: var(--renewableGreen);
+  text-anchor: middle;
+}
+
+/* Telemetry Cards Row */
+.telemetryRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: auto;
+}
+
+.telemetryCard {
+  background-color: var(--lightGrey);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border: 1px solid rgba(75, 91, 120, 0.05);
+}
+
+.telemetryTitle {
+  font-family: var(--fontData);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--steelBlue);
+  letter-spacing: 0.8px;
+}
+
+.telemetryVal {
+  font-family: var(--fontHeading);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--intelligenceBlue);
+}
+
+.telemetrySub {
+  font-family: var(--fontBody);
+  font-size: 12px;
+  color: var(--steelBlue);
+  opacity: 0.8;
+}
+
+/* Policy Progression Panel */
+.policyList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.policyItem {
+  background-color: var(--lightGrey);
+  padding: 20px 24px;
+  border-radius: 12px;
+  border: 1px solid rgba(75, 91, 120, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.policyMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.policyName {
+  font-family: var(--fontHeading);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--intelligenceBlue);
+}
+
+.policyBadgeRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.policyStatus {
+  font-family: var(--fontData);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--steelBlue);
+  background: rgba(75, 91, 120, 0.08);
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.policyBudget {
+  font-family: var(--fontData);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--renewableGreen);
+  background: rgba(31, 164, 99, 0.08);
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.policyProgressWrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.policyProgressBarOuter {
+  flex-grow: 1;
+  height: 8px;
+  background-color: rgba(75, 91, 120, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.policyProgressBarInner {
+  height: 100%;
+  background: var(--signalGradient);
+  border-radius: 4px;
+  transition: width 0.8s ease-in-out;
+}
+
+.policyPercent {
+  font-family: var(--fontData);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--intelligenceBlue);
+  min-width: 36px;
+  text-align: right;
+}
+
+.policyFooterNote {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  font-family: var(--fontBody);
+  font-size: 13px;
+  color: var(--steelBlue);
+  padding: 16px;
+  background-color: rgba(255, 193, 7, 0.05);
+  border: 1px solid rgba(255, 193, 7, 0.15);
+  border-radius: 8px;
+}
+
+.signalDotIndicator {
+  width: 8px;
+  height: 8px;
+  background-color: var(--signalYellow);
+  border-radius: 50%;
+  animation: pulseYellow 1.5s infinite;
+}
+
+/* Capital IPO Table Panel */
+.ipoTable {
+  border: 1px solid rgba(75, 91, 120, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.tableHeader {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  background-color: var(--lightGrey);
+  padding: 16px 20px;
+  font-family: var(--fontData);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--steelBlue);
+  letter-spacing: 0.8px;
+  border-bottom: 1px solid rgba(75, 91, 120, 0.1);
+}
+
+.tableBody {
+  display: flex;
+  flex-direction: column;
+}
+
+.tableRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  padding: 18px 20px;
+  border-bottom: 1px solid rgba(75, 91, 120, 0.06);
+  font-family: var(--fontBody);
+  font-size: 14px;
+  color: var(--steelBlue);
+  align-items: center;
+}
+
+.tableRow:last-child {
+  border-bottom: none;
+}
+
+.ipoName {
+  font-family: var(--fontHeading);
+  font-weight: 600;
+  color: var(--intelligenceBlue);
+  font-size: 15px;
+}
+
+.ipoSize {
+  font-family: var(--fontData);
+  font-weight: 700;
+}
+
+.ipoYear {
+  font-family: var(--fontData);
+}
+
+.ipoReturn {
+  font-family: var(--fontData);
+  font-weight: 700;
+  color: var(--renewableGreen);
+}
+
+.telemetryNote {
+  font-family: var(--fontBody);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--steelBlue);
+  padding: 16px;
+  border-left: 3px solid var(--renewableGreen);
+  background-color: rgba(31, 164, 99, 0.03);
+  margin-top: auto;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .consoleContainer {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 30px 24px;
+  }
+  .visualBoard {
+    padding: 30px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionContainer {
+    padding: 60px 24px;
+  }
+  .headline {
+    font-size: 32px;
+  }
+  .telemetryRow {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .tableHeader {
+    display: none;
+  }
+  .tableRow {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 16px;
+  }
+  .ipoReturn {
+    font-size: 16px;
+  }
+}

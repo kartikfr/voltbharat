@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap');
+
+:root {
+  /* Colors */
+  --intelligenceBlue: #0D1B3D;
+  --renewableGreen: #1FA463;
+  --signalYellow: #FFC107;
+  --steelBlue: #4B5B78;
+  --lightGrey: #F2F4F7;
+  --white: #FFFFFF;
+  --softIvory: #F8FAF6;
+  --dataMistBlue: #EAF4FF;
+
+  /* Gradients */
+  --lightGradient: linear-gradient(135deg, #FFFFFF 0%, #F8FAF6 50%, #EAF4FF 100%);
+  --darkGradient: linear-gradient(135deg, #0D1B3D 0%, #07142F 50%, #031024 100%);
+  --signalGradient: linear-gradient(90deg, #1FA463 0%, #FFC107 100%);
+  
+  /* Fonts */
+  --fontHeading: 'Sora', sans-serif;
+  --fontBody: 'Inter', sans-serif;
+  --fontData: 'Space Grotesk', sans-serif;
+
+  /* Transitions */
+  --transitionSmooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --transitionSlow: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--softIvory);
+  color: var(--steelBlue);
+  font-family: var(--fontBody);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Custom Selection */
+::selection {
+  background-color: var(--renewableGreen);
+  color: var(--white);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fontHeading);
+  color: var(--intelligenceBlue);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--lightGrey);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--steelBlue);
+  border-radius: 5px;
+  border: 2px solid var(--lightGrey);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--intelligenceBlue);
+}
+
+/* Utility Animations */
+@keyframes pulseGlow {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(31, 164, 99, 0.4);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(31, 164, 99, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(31, 164, 99, 0);
+  }
+}
+
+@keyframes pulseYellow {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.5);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(255, 193, 7, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 193, 7, 0);
+  }
+}
