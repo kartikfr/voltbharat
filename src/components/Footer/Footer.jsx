@@ -14,15 +14,15 @@ export default function Footer() {
             <img src="/logos/2.png" alt="VOLT Bharat Logo" className={styles.logoImg} />
           </a>
           <p className={styles.positioningLine}>
-            VOLT Bharat is the Voice Of Latest Trends in Bharat — built to track, decode, and deliver the signals shaping India’s renewable-energy economy.
+            VOLT Bharat is the Voice Of Latest Trends in Bharat, built to track, decode, and deliver the signals shaping India’s renewable-energy economy.
           </p>
           <div className={styles.contactRow}>
             <Mail size={16} />
-            <a href="mailto:intelligence@voltbharat.in" className={styles.contactLink}>intelligence@voltbharat.in</a>
+            <a href="mailto:thevoltbharat@gmail.com" className={styles.contactLink}>thevoltbharat@gmail.com</a>
           </div>
           <div className={styles.contactRow}>
             <MapPin size={16} />
-            <span>New Delhi, India</span>
+            <span>Jaipur, Rajasthan</span>
           </div>
         </div>
 

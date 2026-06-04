@@ -56,10 +56,10 @@ export default function MeaningSection() {
           <h2 className={styles.headline}>Voice. Energy. Signals. Bharat.</h2>
           <div className={styles.bodyBlock}>
             <p className={styles.leadText}>
-              <strong>VOLT Bharat</strong> stands for <strong>Voice Of Latest Trends in Bharat</strong>. But it's more than a name—it is our central story.
+              <strong>VOLT Bharat</strong> stands for <strong>Voice Of Latest Trends in Bharat</strong>. But it's more than a name, it is our central story.
             </p>
             <p className={styles.descriptionText}>
-              The word <strong>VOLT</strong> carries the energy of the sector we track — electricity, clean power, solar, wind, storage, grid, and the future of energy. But it also represents our role in the ecosystem — to become the <strong>voice</strong> that tracks the latest trends, policies, market movements, IPO signals, subsidy opportunities, and clean-tech shifts across Bharat.
+              The word <strong>VOLT</strong> carries the energy of the sector we track: electricity, clean power, solar, wind, storage, grid, and the future of energy. But it also represents our role in the ecosystem: to become the <strong>voice</strong> that tracks the latest trends, policies, market movements, IPO signals, subsidy opportunities, and clean-tech shifts across Bharat.
             </p>
             <p className={styles.descriptionText}>
               The <strong>Insight Lens</strong> in our logo represents how we look deeper into every signal. We do not just report updates. We decode what they mean, who they impact, and where the next opportunity may emerge.
@@ -101,7 +101,7 @@ export default function MeaningSection() {
             </div>
             <h3 className={styles.cardTitle}>Bharat</h3>
             <p className={styles.cardText}>
-              We focus on India’s renewable-energy ecosystem — from national missions to state-level opportunities.
+              We focus on India’s renewable-energy ecosystem, from national missions to state-level opportunities.
             </p>
           </div>
 

@@ -33,7 +33,7 @@ export default function WhyVoltExists() {
 
   // Split content into spans for word animation
   const paragraph1 = "VOLT Bharat stands for Voice Of Latest Trends in Bharat. But it is more than a name.";
-  const paragraph2 = "It represents a belief that Bharat’s renewable-energy sector needs a trusted voice — one that can track the market, decode the policies, simplify subsidies, follow capital-market movements, and explain the clean-tech shifts shaping the future.";
+  const paragraph2 = "It represents a belief that Bharat’s renewable-energy sector needs a trusted voice, one that can track the market, decode the policies, simplify subsidies, follow capital-market movements, and explain the clean-tech shifts shaping the future.";
   const paragraph3 = "In a sector where every new policy, mission, IPO, subsidy, tender, technology, or regulation can unlock a new business opportunity, staying updated is not optional anymore.";
   const paragraph4 = "It is a competitive advantage. VOLT Bharat is built to become that advantage.";
 
