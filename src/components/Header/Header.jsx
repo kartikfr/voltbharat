@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
 
@@ -36,6 +37,7 @@ export default function Header() {
           <a href="#track" className={styles.navLink}>What We Track</a>
           <a href="#terminal" className={styles.navLink}>Intelligence Desk</a>
           <a href="#how-it-works" className={styles.navLink}>How It Works</a>
+          <Link to="/blog" className={styles.navLink}>Intelligence Blog</Link>
         </nav>
 
         {/* CTA Button */}
@@ -61,6 +63,7 @@ export default function Header() {
           <a href="#track" className={styles.mobileNavLink} onClick={toggleMenu}>What We Track</a>
           <a href="#terminal" className={styles.mobileNavLink} onClick={toggleMenu}>Intelligence Desk</a>
           <a href="#how-it-works" className={styles.mobileNavLink} onClick={toggleMenu}>How It Works</a>
+          <Link to="/blog" className={styles.mobileNavLink} onClick={toggleMenu}>Intelligence Blog</Link>
           <a href="#newsletter" className={`${styles.mobileNavLink} ${styles.mobileCtaLink}`} onClick={toggleMenu}>
             Join the Pulse <ArrowUpRight size={16} />
           </a>
