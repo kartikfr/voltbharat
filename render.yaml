@@ -32,3 +32,5 @@ services:
         sync: false
       - key: CLOUDINARY_SECRET
         sync: false
+      - key: ENCRYPTION_KEY
+        sync: false
