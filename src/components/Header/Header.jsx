@@ -25,24 +25,24 @@ export default function Header() {
     <header className={`${styles.headerContainer} ${isScrolled ? styles.isScrolled : ''}`}>
       <div className={styles.headerContent}>
         {/* Logo */}
-        <a href="#hero" className={styles.logoLink}>
+        <a href="/" className={styles.logoLink}>
           <img src="/logos/2.png" alt="VOLT Bharat Logo" className={styles.logoImg} />
         </a>
 
         {/* Desktop Navigation */}
         <nav className={styles.desktopNav}>
-          <a href="#meaning" className={styles.navLink}>Narrative</a>
-          <a href="#why-volt" className={styles.navLink}>The Gap</a>
-          <a href="#dashboard" className={styles.navLink}>Pulse Dashboard</a>
-          <a href="#track" className={styles.navLink}>What We Track</a>
-          <a href="#terminal" className={styles.navLink}>Intelligence Desk</a>
-          <a href="#how-it-works" className={styles.navLink}>How It Works</a>
+          <a href="/#meaning" className={styles.navLink}>Narrative</a>
+          <a href="/#why-volt" className={styles.navLink}>The Gap</a>
+          <a href="/#dashboard" className={styles.navLink}>Pulse Dashboard</a>
+          <a href="/#track" className={styles.navLink}>What We Track</a>
+          <a href="/#terminal" className={styles.navLink}>Intelligence Desk</a>
+          <a href="/#how-it-works" className={styles.navLink}>How It Works</a>
           <Link to="/blog" className={styles.navLink}>Intelligence Blog</Link>
         </nav>
 
         {/* CTA Button */}
         <div className={styles.ctaWrapper}>
-          <a href="#newsletter" className={styles.ctaButton}>
+          <a href="/#newsletter" className={styles.ctaButton}>
             <span>Join the Pulse</span>
             <ArrowUpRight className={styles.ctaIcon} size={16} />
           </a>
@@ -57,14 +57,14 @@ export default function Header() {
       {/* Mobile Drawer */}
       <div className={`${styles.mobileDrawer} ${isMenuOpen ? styles.mobileDrawerOpen : ''}`}>
         <nav className={styles.mobileNav}>
-          <a href="#meaning" className={styles.mobileNavLink} onClick={toggleMenu}>Narrative</a>
-          <a href="#why-volt" className={styles.mobileNavLink} onClick={toggleMenu}>The Gap</a>
-          <a href="#dashboard" className={styles.mobileNavLink} onClick={toggleMenu}>Pulse Dashboard</a>
-          <a href="#track" className={styles.mobileNavLink} onClick={toggleMenu}>What We Track</a>
-          <a href="#terminal" className={styles.mobileNavLink} onClick={toggleMenu}>Intelligence Desk</a>
-          <a href="#how-it-works" className={styles.mobileNavLink} onClick={toggleMenu}>How It Works</a>
+          <a href="/#meaning" className={styles.mobileNavLink} onClick={toggleMenu}>Narrative</a>
+          <a href="/#why-volt" className={styles.mobileNavLink} onClick={toggleMenu}>The Gap</a>
+          <a href="/#dashboard" className={styles.mobileNavLink} onClick={toggleMenu}>Pulse Dashboard</a>
+          <a href="/#track" className={styles.mobileNavLink} onClick={toggleMenu}>What We Track</a>
+          <a href="/#terminal" className={styles.mobileNavLink} onClick={toggleMenu}>Intelligence Desk</a>
+          <a href="/#how-it-works" className={styles.mobileNavLink} onClick={toggleMenu}>How It Works</a>
           <Link to="/blog" className={styles.mobileNavLink} onClick={toggleMenu}>Intelligence Blog</Link>
-          <a href="#newsletter" className={`${styles.mobileNavLink} ${styles.mobileCtaLink}`} onClick={toggleMenu}>
+          <a href="/#newsletter" className={`${styles.mobileNavLink} ${styles.mobileCtaLink}`} onClick={toggleMenu}>
             Join the Pulse <ArrowUpRight size={16} />
           </a>
         </nav>

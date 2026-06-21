@@ -5,8 +5,8 @@ services:
     region: singapore
     plan: free
     rootDir: cms
-    buildCommand: cd /opt/render/project/src/cms && npm install && npm run build
-    startCommand: cd /opt/render/project/src/cms && npm start
+    buildCommand: npm install
+    startCommand: npm run build && npm start
     envVars:
       - key: NODE_ENV
         value: production
