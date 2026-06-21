@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: voltbharat-cms
+    env: node
+    region: singapore
+    plan: free
+    rootDir: cms
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_CLIENT
+        value: postgres
+      - key: DATABASE_URL
+        sync: false
+      - key: APP_KEYS
+        sync: false
+      - key: API_TOKEN_SALT
+        sync: false
+      - key: ADMIN_JWT_SECRET
+        sync: false
+      - key: TRANSFER_TOKEN_SALT
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: CLOUDINARY_NAME
+        value: dgzs47exe
+      - key: CLOUDINARY_KEY
+        sync: false
+      - key: CLOUDINARY_SECRET
+        sync: false
