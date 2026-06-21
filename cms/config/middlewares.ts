@@ -18,7 +18,13 @@ export default [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['http://localhost:5173', 'http://localhost:3000', 'https://voltbharat.com', '*'],
+      origin: [
+        'http://localhost:5173',
+        'http://localhost:5174',
+        'http://localhost:3000',
+        'https://voltbharat.com',
+        'https://www.voltbharat.com',
+      ],
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
       headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
       keepHeaderOnError: true,
